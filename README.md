@@ -35,7 +35,7 @@ import './index.css';
 const store = createStore(shoppingListItemReducer); /* code change */
 
 ReactDOM.render(
-  <App store={store} />, /* code change */ 
+  <App store={store} />, /* code change */
   document.getElementById('root')
 );
 ```
@@ -52,7 +52,7 @@ export default function shoppingListItemReducer(state = {
 
     case 'INCREASE_COUNT':
       return state.items.concat(state.items.length + 1);
-      
+
     default:
       return state;
   }
@@ -83,7 +83,7 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={(event) => this.handleOnClick(event)} >
-          Click 
+          Click
         </button>
         <p>{this.props.store.getState().items.length}</p>
       </div>
@@ -94,11 +94,11 @@ class App extends Component {
 export default App;
 ```
 
-Ok, so this code places a button on the page, that dispatches an action to increase the count each time the button is clicked. If you boot up the app, you should see a button on the page, followed by a zero, as we start off with zero items in our store's state. If you click the button, however it never changes. Why not? Well, we *are* changing our state, but our application is not re-rendering. But don't take my word for it, instead let's prove it in the next section.
+Ok, so this code places a button on the page, that dispatches an action to increase the count each time the button is clicked. If you boot up the app, you should see a button on the page, followed by a zero, as we start off with zero items in our store's state. If you click the button however, it never changes. Why not? Well, we *are* changing our state, but our application is not re-rendering. But don't take my word for it, instead let's prove it in the next section.
 
 #### Add in logging to our reducer
 
-Ok, so getting our application to re-render takes a bit of work, and were going to leave it for the next section. In the meantime, let's get some feedback. First, let's log our action and the new state. So we'll change the reducer to the following:
+Ok, so getting our application to re-render takes a bit of work, and we're going to leave it for the next section. In the meantime, let's get some feedback. First, let's log our action and the new state. So we'll change the reducer to the following:
 
 ```javascript
 // ./src/reducers/shoppingListItemReducer
@@ -134,7 +134,7 @@ First, just Google for Redux Devtools Chrome. There you will find the Chrome ext
 Second, we need to tell our application to communicate with this extension. Doing so is pretty easy.  Now we change the arguments to our createStore method to the following:
 
 ```javascript
-// ./src/index.js 
+// ./src/index.js
 
 import React from 'react';
 import ReactDOM from 'react-dom';
