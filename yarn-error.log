@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/John/.nvm/versions/node/v6.11.2/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js install react-redux
+
+PATH: 
+  /Users/John/.rvm/gems/ruby-2.3.3/bin:/Users/John/.rvm/gems/ruby-2.3.3@global/bin:/Users/John/.rvm/rubies/ruby-2.3.3/bin:/Users/John/.nvm/versions/node/v6.11.2/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/John/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  6.11.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "redux-intro-shopping-list",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+      "react-scripts": "0.7.0"
+    },
+    "dependencies": {
+      "react": "^15.3.2",
+      "react-bootstrap": "^0.30.6",
+      "react-dom": "^15.3.2",
+      "redux": "^3.6.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add react-redux" instead.
+      at MessageError.Error (native)
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:21987:13)
+      at next (native)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
